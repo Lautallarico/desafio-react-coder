@@ -10,7 +10,7 @@ const NavBar = () => {
                 <a href="" className="brand-logo">
                     <img src="./assets/Hands-Hand-icon.png" alt="logo de tienda con forma de mano" />
                 </a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li><a href="#">Productos</a></li>
                     <li><a href="#">Quienes somos?</a></li>
                     <li><a href="#">Contacto</a></li>
