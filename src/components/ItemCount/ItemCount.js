@@ -1,23 +1,19 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const ItemCount = ({ stock, initial, onAdd }) => {
 
     const [contador, setContador] = useState(initial)
 
     const addProduct = () => {
-        // setContador(contador + 1)
         if (stock > contador) {
             setContador(contador + 1)
         }
-        
     }
 
     const removeProduct = () => {
-       
-        if (stock >= 1) {
+        if (contador >= 1) {
             setContador(contador - 1)
         }
-
     }
 
 
