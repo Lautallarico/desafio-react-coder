@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react"
+import './ItemCount.css'
+
 
 const ItemCount = ({ stock, initial, onAdd }) => {
 
     const [contador, setContador] = useState(initial)
-
+    
     const addProduct = () => {
         if (stock > contador) {
             setContador(contador + 1)

@@ -1,0 +1,17 @@
+.item-product {
+    float: left;
+    width: 33.33%;
+    box-shadow: 1px 1px 5px #afafaf47;
+    border: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.item-product img {
+    width: 50%;
+}
+
