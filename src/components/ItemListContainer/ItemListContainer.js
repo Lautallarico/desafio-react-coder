@@ -2,6 +2,7 @@
 import products from "../Products/Products"
 import ItemList from "../ItemList/ItemList"
 import { useEffect, useState } from "react"
+import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer"
 
 
 const ItemListContainer = ({ section }) => {
