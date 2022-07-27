@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <NavBar />
       <div>
-        {/* <ItemListContainer section={'Dedos en oferta'} /> */}
-        <ItemDetailContainer/>
+        <ItemListContainer section={'Dedos en oferta'} />
+        {/* <ItemDetailContainer/> */}
       </div>
 
     </div>
