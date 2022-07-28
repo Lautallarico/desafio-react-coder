@@ -1,6 +1,5 @@
 .item-detail {
-    float: left;
-    width: 19%;
+    width: 20%;
     box-shadow: 1px 1px 5px #afafaf47;
     border: 10px;
     display: flex;
@@ -9,4 +8,8 @@
     text-align: center;
     margin-right: 10px;
     align-items: center;
+}
+
+.item-detail img {
+    width: 100%;
 }
