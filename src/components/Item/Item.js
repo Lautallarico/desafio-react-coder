@@ -1,11 +1,18 @@
+import ItemCount from "../ItemCount/ItemCount"
 
+const Item = ({ data }) => {
 
-const Item = () => {
+    const { image, title, price, stock } = data
     return (
-        <>
-            {/* Desarrolla la vista de un ítem donde item es de tipo
-              {id, title, price, pictureUrl} */}
-        </>
+
+        <div className="item-product">
+            <img src={`/assets/${image}`} alt="imagen de producto" />
+            <p>{title}</p>
+            <p>$ {price}</p>
+            <ItemCount stock={stock} initial={1} />
+            <button>Comprar</button>
+        </div>
+
     )
 }
 

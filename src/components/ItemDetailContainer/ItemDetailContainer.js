@@ -2,13 +2,13 @@ import { useEffect, useState } from "react"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import products from "../Products/Products"
 
-const ItemDetailContainer = ({item}) => {
+const ItemDetailContainer = () => {
 
     const [detailContainer, setDetailContainer] = useState([])
 
     const getItem = new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(products)
+            resolve(products[1])
         }, 2000)
     })
 
@@ -22,7 +22,7 @@ const ItemDetailContainer = ({item}) => {
     return (
 
         <>
-            <ItemDetail section={detailContainer} />
+            <ItemDetail data={detailContainer} />
         </>
     )
 }
