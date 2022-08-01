@@ -9,6 +9,8 @@
     text-align: center;
     margin-right: 10px;
     align-items: center;
+    text-decoration: none;
+    color: black;
 }
 
 .item-product img {
