@@ -6,7 +6,7 @@ const products = [
         image: '/manoDerecha/pulgar.png',
         description: 'El dedo para tirar likes',
         hand: 'Mano derecha',
-        category: 'right-hand',
+        categoryId: 'righthand',
         stock: 4
     },
     {
@@ -16,7 +16,7 @@ const products = [
         image: '/manoDerecha/anular.png',
         description: 'El dedo que no sabemos para que sirve',
         hand: 'Mano derecha',
-        category: 'right-hand',
+        categoryId: 'righthand',
         stock: 5
     },
     {
@@ -26,7 +26,7 @@ const products = [
         image: '/manoDerecha/medio.png',
         description: 'Bueno, todos sabemos para que sirve',
         hand: 'Mano derecha',
-        category: 'right-hand',
+        categoryId: 'righthand',
         stock: 6
     },
     {
@@ -36,7 +36,7 @@ const products = [
         image: '/manoDerecha/indice.png',
         description: 'El dedo acusador o para señalar algo',
         hand: 'Mano derecha',
-        category: 'right-hand',
+        categoryId: 'righthand',
         stock: 7
     },
     {
@@ -46,7 +46,7 @@ const products = [
         image: '/manoDerecha/menique.png',
         description: 'El dedo chiquito que se usa para hacer promesas entre amigos',
         hand: 'Mano derecha',
-        category: 'right-hand',
+        categoryId: 'righthand',
         stock: 8
     },
     {
@@ -56,7 +56,7 @@ const products = [
         image: '/manoIzquierda/pulgar.png',
         description: 'El dedo para tirar likes',
         hand: 'Mano izquierda',
-        category: 'left-hand',
+        categoryId: 'lefthand',
         stock: 4
     },
     {
@@ -66,7 +66,7 @@ const products = [
         image: '/manoIzquierda/anular.png',
         description: 'El dedo que no sabemos para que sirve',
         hand: 'Mano izquierda',
-        category: 'left-hand',
+        categoryId: 'lefthand',
         stock: 5
     },
     {
@@ -76,7 +76,7 @@ const products = [
         image: '/manoIzquierda/medio.png',
         description: 'Bueno, todos sabemos para que sirve',
         hand: 'Mano izquierda',
-        category: 'left-hand',
+        categoryId: 'lefthand',
         stock: 6
     },
     {
@@ -86,7 +86,7 @@ const products = [
         image: '/manoIzquierda/indice.png',
         description: 'El dedo acusador o para señalar algo',
         hand: 'Mano izquierda',
-        category: 'left-hand',
+        categoryId: 'lefthand',
         stock: 7
     },
     {
@@ -96,7 +96,7 @@ const products = [
         image: '/manoIzquierda/menique.png',
         description: 'El dedo chiquito que se usa para hacer promesas entre amigos',
         hand: 'Mano izquierda',
-        category: 'left-hand',
+        categoryId: 'lefthand',
         stock: 8
     }
 ]

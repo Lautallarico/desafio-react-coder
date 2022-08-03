@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="App">
             <section>
-                <ItemListContainer section={'Dedos en oferta'} />
+                <ItemListContainer section={'Dedos en oferta'} categoryParam='' />
             </section>
         </div>
 

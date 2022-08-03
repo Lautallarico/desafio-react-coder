@@ -6,13 +6,14 @@ import { useParams } from 'react-router-dom'
 const ItemDetailContainer = () => {
     const [productData, setProductData] = useState({})
     const [detailContainer, setDetailContainer] = useState([])
-    const { id, category } = useParams()
+    const { id } = useParams()
 
     const getItem = new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(productData)
         }, 2000)
     })
+    
 
     useEffect(() => {
         getItem
@@ -22,7 +23,7 @@ const ItemDetailContainer = () => {
     }, [])
 
     useEffect(() => {
-        filterById()
+        filterById();
     }, [])
 
     const filterById = () => {
@@ -32,6 +33,8 @@ const ItemDetailContainer = () => {
             }
         })
     }
+
+
 
     return (
 
