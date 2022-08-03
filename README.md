@@ -13,4 +13,4 @@ Disponible en https://materializecss.com/
 
 Trabajo desarrollado por Lautaro Tallarico
 
-![](proyectoLT.gif)
+![image](https://github.com/Lautallarico/desafio-react-coder/blob/master/public/assets/proyectoLT.gif)
