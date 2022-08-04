@@ -8,6 +8,7 @@ import AboutUs from './pages/AboutUs';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Category from './pages/Category';
+import Checkout from './pages/Checkout';
 
 
 function App() {
@@ -19,9 +20,10 @@ function App() {
         <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/contacto' element={<Contact />} />
         <Route path='/productos' element={<ItemListContainer />} />
-        <Route path='/:category' element={<Category />}/>
+        <Route path='/:category' element={<Category />} />
         <Route path='/productos/:id' element={<ItemDetailContainer />} />
-        <Route path='*' element={<h1>ERROR 404 - No sé donde estoy</h1>}/>
+        <Route path='/cart' element={<Checkout />} />
+        <Route path='*' element={<h1>ERROR 404 - No sé donde estoy</h1>} />
       </Routes>
     </BrowserRouter>
   );

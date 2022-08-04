@@ -12,11 +12,6 @@ const ItemListContainer = ({ section, categoryParam }) => {
     const [listProducts, setListProducts] = useState([])
     const filterByCategory = products.filter((prod) => prod.categoryId === category)
 
-    // const getProducts = new Promise((resolve, reject) => {
-    //     setTimeout(() => {
-    //         resolve(products)
-    //     }, 2000)
-    // })
 
     const getProducts = new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -30,20 +25,13 @@ const ItemListContainer = ({ section, categoryParam }) => {
 
 
 
-
     useEffect(() => {
         getProducts
             .then((res) => { setListProducts(res) })
             .catch((error) => { console.log('Falla en el sistema') })
             .finally(() => { console.log('Se terminó todo'); })
+    }, [filterByCategory]) // eslint-disable-line react-hooks/exhaustive-deps
 
-    }, [filterByCategory])
-
-    // useEffect(() => {
-    //     filterByCategory()
-    // }, [])
-
-    
 
 
     return (
