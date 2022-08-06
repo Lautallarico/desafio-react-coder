@@ -29,7 +29,7 @@ const ItemListContainer = ({ section, categoryParam }) => {
         getProducts
             .then((res) => { setListProducts(res) })
             .catch((error) => { console.log('Falla en el sistema') })
-            .finally(() => { console.log('Se terminó todo'); })
+            .finally(() => { })
     }, [filterByCategory]) // eslint-disable-line react-hooks/exhaustive-deps
 
 

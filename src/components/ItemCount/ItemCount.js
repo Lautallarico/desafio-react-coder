@@ -27,13 +27,22 @@ const ItemCount = ({ stock, setQuantitySelected }) => {
     return (
         <>
             <div className="item-count">
-                <button onClick={removeProduct}>-</button>
+                <a class="btn-floating red lighten-1" onClick={removeProduct}><i class="material-icons" >remove</i></a>
+                {/* <button onClick={removeProduct}>-</button> */}
                 <p>{quantityToAdd}</p>
-                <button onClick={addProduct}>+</button>
+                <a class="btn-floating red lighten-1" onClick={addProduct} ><i class="material-icons" >add</i></a>
+                {/* <button onClick={addProduct}>+</button> */}
             </div>
-            <button onClick={onAdd}>Agregar al carrito</button>
+            <button class="waves-effect waves-light btn-small" onClick={onAdd}>Agregar al carrito</button>
+            {/* <button onClick={onAdd}>Agregar al carrito</button> */}
         </>
     )
 }
 
 export default ItemCount
+
+    // <div div className = "item-count" >
+    //             <button onClick={removeProduct}>-</button>
+    //             <p>{quantityToAdd}</p>
+    //             <button onClick={addProduct}>+</button>
+    //         </div >

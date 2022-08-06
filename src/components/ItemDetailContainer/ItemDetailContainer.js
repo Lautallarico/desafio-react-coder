@@ -18,8 +18,8 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         getItem
             .then((res) => { setDetailContainer(res) })
-            .catch((error) => { console.log('Error en ItemListContainer'); })
-            .finally(() => { console.log('Se termino ItemListContainer'); })
+            .catch((error) => { console.log('Error en ItemDetailContainer'); })
+            .finally(() => { })
     }, [])
 
     useEffect(() => {

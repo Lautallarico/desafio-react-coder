@@ -8,17 +8,22 @@ const ItemProduct = ({ data }) => {
 
     return (
         <Link to={`/productos/${id}`}>
-            <div className="item-product">
-
-                <img src={`/assets/${image}`} alt="imagen de producto" />
-                <p>{title}</p>
-                <p>$ {price}</p>
-                {/* <ItemCount stock={stock} initial={1} /> */}
-                <button>Comprar</button>
-
+            <div>
+                <div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src={`/assets/${image}`} />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">{title}</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </Link>
     )
 }
 
 export default ItemProduct
+

@@ -19,3 +19,7 @@
 .item-detail div {
     padding: 3%;
 }
+
+.item-detail div p {
+    font-size: large;
+}

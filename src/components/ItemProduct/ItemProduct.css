@@ -1,19 +1,9 @@
-.item-product {
+.card {
+    width: 18%;
     float: left;
-    width: 19%;
-    box-shadow: 1px 1px 5px #afafaf47;
-    border: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-right: 10px;
-    align-items: center;
-    text-decoration: none;
+    margin: 1%;
+}
+
+.card-title {
     color: black;
 }
-
-.item-product img {
-    width: 50%;
-}
-
