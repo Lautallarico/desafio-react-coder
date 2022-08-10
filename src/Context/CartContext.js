@@ -6,12 +6,13 @@ const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
 
     const addItem = (product) => {
+        console.log(product);
         const isProductInCart = cart.find(productInCart => productInCart.id === product.id)
 
         if (isProductInCart) {
             const newArray = cart.map(productInCart => {
                 if (productInCart.id === product.id) {
-                    return { ...productInCart, quantityToAdd: productInCart.quantityToAdd + product.quantityToAdd }
+                    return { ...productInCart, quantitySelected: productInCart.quantitySelected + product.quantitySelected }
                 } else {
                     return productInCart
                 }

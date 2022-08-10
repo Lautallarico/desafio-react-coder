@@ -1,13 +1,15 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
 import { Link } from "react-router-dom"
 import ItemCount from "../ItemCount/ItemCount"
 import './ItemDetail.css'
+import { CartContext } from "../../Context/CartContext"
 
 
 const ItemDetail = ({ data }) => {
 
     const { image, title, description, price, hand, stock } = data
     const [quantitySelected, setQuantitySelected] = useState(0)
+    const { addItem } = useContext(CartContext)
 
 
     return (
@@ -22,7 +24,7 @@ const ItemDetail = ({ data }) => {
                 <p>Unidades disponibles {stock}</p>
                 <p>$ {price}</p>
                 {
-                    quantitySelected > 0 ? <Link to='/cart'><button className="waves-effect waves-light btn-small" >TERMINAR COMPRA</button></Link> : <ItemCount stock={stock} setQuantitySelected={setQuantitySelected} productData={data}/>
+                    quantitySelected > 0 ? <Link to='/cart'><button className="waves-effect waves-light btn-small" onClick={() => addItem({ ...data, quantitySelected })} >TERMINAR COMPRA</button></Link> : <ItemCount stock={stock} setQuantitySelected={setQuantitySelected} productData={data} />
                 }
             </div>
         </div>
