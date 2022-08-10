@@ -1,9 +1,11 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import './ItemCount.css'
+import { CartContext } from "../../Context/CartContext"
 
 
-const ItemCount = ({ stock, setQuantitySelected }) => {
+const ItemCount = ({ stock, setQuantitySelected, productData }) => {
 
+    const { addItem } = useContext(CartContext)
     const [quantityToAdd, setQuantityToAdd] = useState(1)
     // const [contador, setContador] = useState(initial)
 
@@ -20,20 +22,21 @@ const ItemCount = ({ stock, setQuantitySelected }) => {
     }
 
     const onAdd = () => {
-        setQuantitySelected(quantityToAdd)
+        // setQuantitySelected(quantityToAdd)
+        addItem({...productData, quantityToAdd})
     }
 
 
     return (
         <>
             <div className="item-count">
-                <a class="btn-floating red lighten-1" onClick={removeProduct}><i class="material-icons" >remove</i></a>
+                <a className="btn-floating red lighten-1" onClick={removeProduct}><i className="material-icons" >remove</i></a>
                 {/* <button onClick={removeProduct}>-</button> */}
                 <p>{quantityToAdd}</p>
-                <a class="btn-floating red lighten-1" onClick={addProduct} ><i class="material-icons" >add</i></a>
+                <a className="btn-floating red lighten-1" onClick={addProduct} ><i className="material-icons" >add</i></a>
                 {/* <button onClick={addProduct}>+</button> */}
             </div>
-            <button class="waves-effect waves-light btn-small" onClick={onAdd}>Agregar al carrito</button>
+            <button className="waves-effect waves-light btn-small" onClick={onAdd}>Agregar al carrito</button>
             {/* <button onClick={onAdd}>Agregar al carrito</button> */}
         </>
     )

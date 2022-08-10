@@ -14,8 +14,8 @@ const NavBar = () => {
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li><Link to='/lefthand'>Mano Izquierda</Link></li>
                     <li><Link to='/righthand'>Mano Derecha</Link></li>
-                    <li><Link to='#'>Quienes somos?</Link></li>
-                    <li><Link to='#'>Contacto</Link></li>
+                    <li><Link to='/aboutus'>Quienes somos?</Link></li>
+                    <li><Link to='/contact'>Contacto</Link></li>
                     <li><CartWidget /></li>
                 </ul>
             </div>
