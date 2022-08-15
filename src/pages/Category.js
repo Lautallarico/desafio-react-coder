@@ -2,10 +2,10 @@
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer"
 
 
-const Category = ({category}) => {
+const Category = () => {
 
     return (
-        <ItemListContainer section={'Productos Filtrados'}  />
+        <ItemListContainer section={'Productos filtrados'} />
     )
 }
 

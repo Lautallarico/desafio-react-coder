@@ -4,9 +4,13 @@ export const CartContext = createContext()
 
 const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
+    const [totalQuantity, setTotalQuantity] = useState(0)
+    const [totalPrice, setTotalPrice] = useState(0)
 
     const addItem = (product) => {
-        console.log(product);
+        setTotalQuantity(totalQuantity + product.quantitySelected)
+        setTotalPrice(totalPrice + product.quantitySelected * product.price)
+
         const isProductInCart = cart.find(productInCart => productInCart.id === product.id)
 
         if (isProductInCart) {
@@ -26,13 +30,21 @@ const CartProvider = ({ children }) => {
 
     const clear = () => {
         setCart([])
-        console.log('Carrito limpio clear');
+        setTotalPrice(0)
+        setTotalQuantity(0)
     }
 
     const removeItem = (id) => {
+        const prod = cart.find((product) => product.id === id)
+        setTotalPrice(totalPrice - prod.quantitySelected * prod.price)
+        setTotalQuantity(totalQuantity - prod.quantitySelected)
+
         const newCart = cart.filter((product) => product.id !== id)
         setCart(newCart)
-        console.log('log desde remove item')
+    }
+
+    const buyAll = () => {
+        console.log(cart);
     }
 
     const dataContext = {
@@ -40,7 +52,10 @@ const CartProvider = ({ children }) => {
         clear,
         removeItem,
         cart,
-        setCart
+        setCart,
+        buyAll,
+        totalPrice,
+        totalQuantity
     }
 
     return (

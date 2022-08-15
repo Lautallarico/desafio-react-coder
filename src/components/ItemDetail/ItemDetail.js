@@ -23,9 +23,7 @@ const ItemDetail = ({ data }) => {
                 <p>{description}</p>
                 <p>Unidades disponibles {stock}</p>
                 <p>$ {price}</p>
-                {
-                    quantitySelected > 0 ? <Link to='/cart'><button className="waves-effect waves-light btn-small" onClick={() => addItem({ ...data, quantitySelected })} >TERMINAR COMPRA</button></Link> : <ItemCount stock={stock} setQuantitySelected={setQuantitySelected} productData={data} />
-                }
+                <ItemCount stock={stock}  productData={data} />
             </div>
         </div>
     )
@@ -35,7 +33,7 @@ export default ItemDetail
 
 /*
 
-
+quantitySelected > 0 ? <Link to='/cart'><button className="waves-effect waves-light btn-small" onClick={()=>addItem({...data, quantitySelected})} >TERMINAR COMPRA</button></Link> :
 
 */
 

@@ -37,6 +37,7 @@ const ItemListContainer = ({ section, categoryParam }) => {
     return (
         <div className="list-products">
             <h2>{section}</h2>
+            {/* {console.log(filterByCategory[0].hand)} */}
             <ItemList items={listProducts} />
         </div>
     )

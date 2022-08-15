@@ -1,0 +1,49 @@
+.card-checkout {
+    border: black;
+    border-style: double;
+    display: flex;
+}
+
+.card-image {
+    height: 200px;
+    width: 200px;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.card-description {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.card-content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.title-checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.vacio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.vacio img{
+    width: 250px;
+}
+
+#resumen-btn{
+    padding-top: 30px;
+}

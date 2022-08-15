@@ -3,3 +3,18 @@
     position: relative;
     margin: 0%;
 }
+
+.badge{
+    color: white;
+}
+
+span.badge{
+    min-width: 1.5rem;
+}
+
+span.new.badge{
+    margin-left: 0px;
+    margin-right: 7px;
+    padding-right: 7px;
+    border-radius: 50%;
+}
