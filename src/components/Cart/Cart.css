@@ -10,7 +10,7 @@
 }
 
 .card-image img {
-    width: 100%;
+    width: 80%;
 }
 
 .card-description {
@@ -47,3 +47,7 @@
 #resumen-btn{
     padding-top: 30px;
 }
+
+/* .row .col.s3 {
+    /* width: 25%;
+} */

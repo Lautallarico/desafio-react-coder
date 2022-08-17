@@ -7,7 +7,8 @@ const Home = () => {
     return (
         <div className="App">
             <section>
-                <ItemListContainer  categoryParam='' section={'Dedos en oferta'} />
+                <h2>Dedos en oferta</h2>
+                <ItemListContainer  categoryParam='' />
             </section>
         </div>
 
