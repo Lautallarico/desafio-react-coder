@@ -18,8 +18,6 @@ const CartWidget = () => {
                         <span className="new badge" data-badge-caption="">{totalQuantity}</span>
                         : ''
                     }
-
-
                     <i className="Medium material-icons">add_shopping_cart</i>
                 </a>
             </Link>

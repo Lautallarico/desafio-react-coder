@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 //Firebase
 import db from '../../firebaseConfig'
 import { doc, getDoc } from 'firebase/firestore'
-import { async } from "@firebase/util"
+
 
 const ItemDetailContainer = () => {
     const [productData, setProductData] = useState({})

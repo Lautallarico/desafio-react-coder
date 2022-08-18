@@ -9,10 +9,6 @@
     width: 200px;
 }
 
-/* .card-image img {
-    width: 80%;
-} */
-
 .card-description {
     display: flex;
     flex-direction: row;
@@ -47,7 +43,3 @@
 #resumen-btn{
     padding-top: 30px;
 }
-
-/* .row .col.s3 {
-    /* width: 25%;
-} */
