@@ -18,7 +18,7 @@ const Cart = () => {
                         <div className="row">
                             <div class="card-checkout col s8 offset-s2 ">
                                 <div class="card-image col s3">
-                                    <img src={`/assets/${product.image}`} alt='producto' />
+                                    <img className="col s11" src={`/assets/${product.image}`} alt='producto' />
                                 </div>
                                 <div class="card-description col s8">
                                     <div class="card-content col s2">

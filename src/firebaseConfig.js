@@ -6,12 +6,12 @@ import { getFirestore } from "firebase/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyB8Nyf5YbZVgzyyRcsAL_EHXXeuBEYK0DA",
-    authDomain: "desafio-lautaro-tallarico.firebaseapp.com",
-    projectId: "desafio-lautaro-tallarico",
-    storageBucket: "desafio-lautaro-tallarico.appspot.com",
-    messagingSenderId: "607151733801",
-    appId: "1:607151733801:web:91ecbcbdf7821f3d547038"
+    apiKey: "AIzaSyB9Y4-O9sj2f2yWEWdLNLVM3zFs1w6pWG8",
+    authDomain: "df-lautaro-tallarico.firebaseapp.com",
+    projectId: "df-lautaro-tallarico",
+    storageBucket: "df-lautaro-tallarico.appspot.com",
+    messagingSenderId: "836444616266",
+    appId: "1:836444616266:web:d599f7063bafa971f898b3"
 };
 
 // Initialize Firebase

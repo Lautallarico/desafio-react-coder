@@ -51,7 +51,7 @@ const products = [
     },
     {
         id: 6,
-        title: 'Pulgar derecho',
+        title: 'Pulgar izquierdo',
         price: 101,
         image: '/manoIzquierda/pulgar.png',
         description: 'El dedo para tirar likes',
