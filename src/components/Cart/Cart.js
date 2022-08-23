@@ -67,7 +67,9 @@ const Cart = () => {
                             <a class="waves-effect waves-light btn" onClick={(() => { clear() })}><i class="material-icons right">delete</i>ELIMINAR TODO</a>
                         </div>
                         <div className="col s">
-                            <a class="waves-effect waves-light btn" onClick={(() => { buyAll() })}><i class="material-icons right">monetization_on</i>TERMINAR COMPRA</a>
+                            <Link to='/finishbuy'>
+                                <a class="waves-effect waves-light btn"><i class="material-icons right">monetization_on</i>TERMINAR COMPRA</a>
+                            </Link>
                         </div>
                     </div>
                 </div>

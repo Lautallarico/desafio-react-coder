@@ -10,6 +10,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Category from './pages/Category';
 import Checkout from './pages/Checkout';
 import CartProvider from './Context/CartContext';
+import FinishBuy from './pages/FinishBuy';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path='/:category' element={<Category />} />
           <Route path='/productos/:id' element={<ItemDetailContainer />} />
           <Route path='/cart' element={<Checkout />} />
+          <Route path='/finishbuy' element={<FinishBuy />} />
           <Route path='*' element={<h1>ERROR 404 - No sé donde estoy</h1>} />
         </Routes>
       </BrowserRouter>
