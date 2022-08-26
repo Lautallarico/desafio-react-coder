@@ -1,5 +1,6 @@
 
 import ItemList from "../ItemList/ItemList"
+import Spinner from "../Spinner/Spinner"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { collection, getDocs, query, where } from "firebase/firestore"
@@ -38,10 +39,14 @@ const ItemListContainer = ({ section, categoryParam }) => {
 
 
     return (
-        <div className="list-products">
-            <h2>{section}</h2>
-            <ItemList items={listProducts} />
-        </div>
+        <>
+
+            <div className="list-products">
+                <h2>{category}</h2>
+                {Object.keys(listProducts).length > 0 && <ItemList items={listProducts} />}
+                {Object.keys(listProducts).length === 0 && <Spinner />}
+            </div>
+        </>
     )
 }
 

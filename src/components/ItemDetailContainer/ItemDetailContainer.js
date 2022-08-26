@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from 'react-router-dom'
+import Spinner from "../Spinner/Spinner"
 //Firebase
 import db from '../../firebaseConfig'
 import { doc, getDoc } from 'firebase/firestore'
@@ -13,7 +14,7 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         getProduct()
             .then((res) => { setProductData(res) })
-    }, [])
+    }, [])  // eslint-disable-line react-hooks/exhaustive-deps
 
 
     const getProduct = async () => {
@@ -32,7 +33,9 @@ const ItemDetailContainer = () => {
     return (
 
         <>
-            <ItemDetail data={productData} />
+            {Object.keys(productData).length > 0 && <ItemDetail data={productData} />}
+            {Object.keys(productData).length === 0 && <Spinner />}
+            {/* <ItemDetail data={productData} /> */}
         </>
     )
 }

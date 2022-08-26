@@ -1,5 +1,4 @@
 
-import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
@@ -11,6 +10,7 @@ import Category from './pages/Category';
 import Checkout from './pages/Checkout';
 import CartProvider from './Context/CartContext';
 import FinishBuy from './pages/FinishBuy';
+import Footer from './pages/Footer';
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
     <CartProvider>
       <BrowserRouter>
         <NavBar />
+
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/aboutus' element={<AboutUs />} />
@@ -29,6 +30,8 @@ function App() {
           <Route path='/finishbuy' element={<FinishBuy />} />
           <Route path='*' element={<h1>ERROR 404 - No sé donde estoy</h1>} />
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </CartProvider>
   );
