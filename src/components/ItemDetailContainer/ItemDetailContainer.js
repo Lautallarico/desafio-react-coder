@@ -35,7 +35,6 @@ const ItemDetailContainer = () => {
         <>
             {Object.keys(productData).length > 0 && <ItemDetail data={productData} />}
             {Object.keys(productData).length === 0 && <Spinner />}
-            {/* <ItemDetail data={productData} /> */}
         </>
     )
 }
