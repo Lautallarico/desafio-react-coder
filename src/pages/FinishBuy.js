@@ -52,10 +52,10 @@ const FinishBuy = () => {
             {success ? (
                 <>
                     <div className="row resume">
-                        <h3 class="col s8 offset-s2" id="titulo-finish">Se ha recibido su pedido</h3>
-                        <p class="col s8 offset-s2">Su compra se registró bajo el ID {success}</p>
-                        <p class="col s8 offset-s2">Ud realizó una compra de {totalQuantity} productos por un valor de ${totalPrice}</p>
-                        <Link to='/' class="col s8 offset-s2 "><a class="waves-effect waves-light btn-large btn-finish" onClick={(() => { clear() })}>Hacer otra compra</a></Link>
+                        <h3 class="col s12" id="titulo-finish">Se ha recibido su pedido</h3>
+                        <p class="col s11 offset-s1">Su compra se registró bajo el ID {success}</p>
+                        <p class="col s11 offset-s1">Ud realizó una compra de {totalQuantity} productos por un valor de ${totalPrice}</p>
+                        <Link to='/' class="col s10 offset-s3 "><a class="waves-effect waves-light btn-large btn-finish" onClick={(() => { clear() })}>Hacer otra compra</a></Link>
                     </div>
 
                 </>

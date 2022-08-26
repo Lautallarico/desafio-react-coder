@@ -1,0 +1,22 @@
+.foto-perfil {
+    width: 80%;
+}
+
+.ficha-personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    margin-bottom: 50px;
+}
+
+.texto {
+    margin: 20px;
+    font-size: large;
+}
+
+.table {
+    font-size: medium;
+}

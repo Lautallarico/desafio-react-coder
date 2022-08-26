@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Dependencias utilizadas
 
-En este proyecto seha utilizado la libreria de MaterializeCss
+En este proyecto se ha utilizado la libreria de MaterializeCss
 Disponible en https://materializecss.com/
 
 ### Licencias
